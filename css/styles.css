@@ -637,7 +637,21 @@ section {
   display: flex;
 }
 
+@media only screen and (max-width: 768px) {
+  #portfolio {
+    grid-template-columns: 1fr;
+    max-width: 100%; 
+  }
 
+  .project-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-tile {
+    border-radius: 8px;
+  }
+}
 
 
 
