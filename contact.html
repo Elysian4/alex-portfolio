@@ -67,33 +67,29 @@
                         <div class="col-lg-6 col-12">
                             <h2 class="mb-4"><span><h2 class="section-heading animated">Contact Me</h2></span></h2>
 
-                            <form class="contact-form me-lg-5 pe-lg-3" role="form">
+                            <form class="contact-form" role="form">
 
                                 <div class="form-floating">
+                                    <label for="name">Full name</label> <br>
                                     <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
-
-                                    <label for="name">Full name</label>
                                 </div>
 
-                                <div class="form-floating my-4">
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-
-                                    <label for="email">Email address</label>
+                                <div class="form-floating">
+                                    <label for="email">Email address</label> <br>
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>     
                                 </div>
                                 
-                                <div class="form-floating my-4">
+                                <div class="form-floating">
+                                    <label for="subject">Subject</label> <br>
                                     <input type="subject" name="subject" id="subject"class="form-control" placeholder="Subject" required>
-
-                                    <label for="subject">Subject</label>
                                 </div>
 
-                                <div class="form-floating mb-4">
+                                <div class="form-floating">
+                                    <label for="message">Your message</label> <br>
                                     <textarea id="message" name="message" class="form-control" placeholder="Leave a comment here" required style="height: 160px"></textarea>
+                                    </div>
 
-                                    <label for="message">Tell us about the project</label>
-                                </div>
-
-                                <div class="col-lg-5 col-6">
+                                <div class="submit-button">
                                     <button type="submit" class="form-control">Send</button>
                                 </div>
                             </form>
