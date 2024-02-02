@@ -416,10 +416,69 @@ section {
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   padding: 16px;
+  width: 100%;
 }
 
 .contact-form button[type='submit']:hover {
   background: var(--primary-color);
+}
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 10px;
+  align-items: center;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.section-padding {
+  padding: 10px 0;
+}
+
+.form-floating{
+  margin: 20px;
+}
+
+.form-control {
+  width: 500px; 
+  padding: 10px;
+  margin-bottom: 15px; 
+  box-sizing: border-box; 
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+      min-height: auto; 
+  }
+
+  .contact-form {
+      max-width: 100%; 
+  }
+
+  .form-control {
+      width: 100%; 
+  }
+
+  .form-floating {
+      margin: 10px; 
+  }
+
+  .contact-info {
+      padding: 20px;
+  }
 }
 
 
