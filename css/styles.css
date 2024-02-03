@@ -1,6 +1,4 @@
-/*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )             
------------------------------------------*/
+/*--------------------------------------- CUSTOM VARIABLES ----------------------------------------*/
 :root {
   --white-color:                #FFFFFF;
   --primary-color:              #FF4400;
@@ -45,9 +43,7 @@ body {
     position: relative;
 }
 
-/*---------------------------------------
-  TYPOGRAPHY               
------------------------------------------*/
+/*--------------------------------------- TYPOGRAPHY ----------------------------------------*/
 
 h2,
 h3,
@@ -128,9 +124,7 @@ a:hover {
 }
 
 
-/*---------------------------------------
-  CUSTOM BUTTON & ICON              
------------------------------------------*/
+/*--------------------------------------- CUSTOM BUTTON & ICON -----------------------------------------*/
 .custom-btn {
   background: var(--dark-color);
   border-radius: 50px;
@@ -149,9 +143,7 @@ a:hover {
 }
 
 
-/*---------------------------------------
-  DIV SEPARATOR               
------------------------------------------*/
+/*---------------------------------------  DIV SEPARATOR -----------------------------------------*/
 .div-separator {
   position: relative;
 }
@@ -179,9 +171,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-/*---------------------------------------
-  FULL IMAGE               
------------------------------------------*/
+/*--------------------------------------- FULL IMAGE -----------------------------------------*/
 .full-image-img {
   display: block;
   position: absolute;
@@ -198,9 +188,7 @@ a:hover {
   }
 }
 
-/*---------------------------------------
-  NAVIGATION               
------------------------------------------*/
+/*--------------------------------------- NAVIGATION -----------------------------------------*/
 
 .navbar {
   background: var(--white-color);
@@ -293,9 +281,7 @@ a:hover {
 }
 
 
-/*---------------------------------------
-  SITE HEADER              
------------------------------------------*/
+/*--------------------------------------- SITE HEADER  -----------------------------------------*/
 .site-header {
   background-color: var(--section-bg-color);
   position: relative;
@@ -322,14 +308,12 @@ a:hover {
   object-fit: cover;
 }
 
-.main-text{
+.main-text {
   margin-bottom: 20px;
-
+  color: aliceblue;
 }
 
-/*---------------------------------------
-  Main picture             
------------------------------------------*/
+/* Main picture */
 @media (min-width: 992px) {
   .main-pic {
     height: 100vh;
@@ -371,11 +355,71 @@ a:hover {
   transform: translate(-50%, -40%);
 }
 
+/* Mobile responsiveness */
+@media (max-width: 991px) {
+  .main-pic {
+    height: auto;
+  }
+
+  .pic-custom {
+    margin-top: 20px;
+  }
+
+  .pic-bottom .container {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main-text {
+    padding: 20px;
+    display: block;
+  }
+
+  .custom-btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
 
 
-/*---------------------------------------
-  SECTION               
------------------------------------------*/
+@media (max-width: 767px) {
+
+  .pic-title{
+    font-size: 18px;
+
+  }
+
+  .main-text {
+    font-size: 16px; 
+  }
+
+  .custom-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .pic-title{
+    font-size: 18px;
+
+  }
+  .main-text {
+    font-size: 11px;
+    padding: 1px;
+    margin: 1px;
+    width: 100%;
+  }
+
+  .custom-btn {
+    font-size: 11px;
+    margin: 1px;
+    height: 20px;
+  }
+}
+
+
+
+/*--------------------------------------- SECTION -----------------------------------------*/
 section {
   content-visibility: auto;
   contain-intrinsic-size: 700px;
@@ -391,9 +435,7 @@ section {
 }
 
 
-/*---------------------------------------
-  CONTACT              
------------------------------------------*/
+/*---------------------------------------  CONTACT  ----------------------------------------*/
 .contact-info {
   padding: 40px;
 }
@@ -482,9 +524,8 @@ section {
 }
 
 
-/*---------------------------------------
-  RESPONSIVE STYLES               
------------------------------------------*/
+/*---------------------------------------RESPONSIVE STYLES-----------------------------------------*/
+
 @media screen and (max-width: 1200px) {
   h1 {
     font-size: 62px;
@@ -604,7 +645,7 @@ section {
 
 
 
-/* ------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------Header------------------------------------------------------------------ */
 
 .section-header {
   text-align: center;
@@ -638,7 +679,6 @@ section {
   height: auto;
   border: 1px solid #ddd;
   border-radius: 8px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease-out;
   display: flex;
 }
