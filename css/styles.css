@@ -278,6 +278,7 @@ a:hover {
 
 .name{
   padding-left: 20px;
+  font-size: x-large;
 }
 
 
@@ -861,6 +862,10 @@ section {
   .sitemap, .links {
       margin-right: 0; 
   }
+
+  .sitemap .items{
+    list-style: none;
+  }
 }
 
 
@@ -877,8 +882,13 @@ section {
   opacity: 90%;
   transform: scale(1.08);
 }
-
-/* ham style */
+.design-name{
+  color: aliceblue;
+}
+.sitemap .items{
+  list-style: none;
+}
+/* ----------------ham style -------------------*/
 .hamburger {
   display: none;
 }
